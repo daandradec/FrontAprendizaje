@@ -80,6 +80,11 @@ table tbody button{
     font-size: 10px;
     box-shadow: 0px 0px 2px 2px gray;
 }
+
+div.table-responsive{
+    max-height:550px !important;
+    overflow-y: auto !important;
+}
 /*
 table, tr, td {
     border: 1px solid black;
