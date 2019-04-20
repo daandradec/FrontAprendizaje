@@ -12,51 +12,71 @@
 
 	<h1>Parking</h1>
 
-	<!-- esta es la barra de navegacion-->
+	
 	<section class="mx-auto bg-white border mt-2" style="width:60%;min-height:600px;">
-
+		
+		<!-- esta es la barra de navegacion-->
 		<ul class="nav nav-tabs" id="myTab" role="tablist">
-		  <li class="nav-item">
+		  <li class="nav-item border-bottom border-right">
 		    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Añadir</a>
 		  </li>
-		  <li class="nav-item">
+		  <li class="nav-item border-bottom border-right">
 		    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Ver</a>
 		  </li>
-		  <li class="nav-item">
+		  <li class="nav-item border-bottom border-right">
 		    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Eliminar</a>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item border-bottom">
 		    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Actualizar</a>
 		  </li>
 		</ul>
+		<!-- esta es la barra de navegacion-->
+
+		<!-- Cuerpo del panel -->
 		<div class="tab-content" id="myTabContent">
 		  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
 				<form id = "formulario">
-				<div id ="nombre">	<b>Nombre:</b> <input id = "inputNombre"type="text"><br></div>
-				<div id = "documento">	<b>Documento:</b> <input type="text"><br></div>
-				<div id = "placa">	<b>Placa:</b><input id = "inputPlaca" type="text" size="10px"><br></div>
-				</form>
 
-				<hr>
-				
-				<table  align ="center">
+					<div class="form-group row">
+						<label for="nombre" class="col-3 font-weight-bold text-info">Nombre:</label>
+						<div class="col-8">
+							<input class="form-control" id="nombre" type="text">
+						</div>
+						
+					</div>
 
-					<tr>
-						<td><img src=".\images\f.png" alt=""></td>
-						<td><img src=".\images\li.png" alt=""></td>
-					</tr>
-			
-					<tr>
-						<td><img src=".\images\b.png" alt=""></td>
-						<td><img src=".\images\ld.png" alt=""></td>
-					</tr>
+					<div class="form-group row">
+						<label for="documento" class="col-3 font-weight-bold text-info">Documento:</label>
+						<div class="col-8">
+							<input class="form-control" id="documento" type="text">
+						</div>						
+					</div>
+
+					<div class="form-group row">
+						<label for="placa" class="col-3 font-weight-bold text-info">Placa:</label>
+						<div class="col-8">
+							<input class="form-control" id="placa" type="text">
+						</div>
+						
+					</div>
+
+					<br>
+					<hr>
 					
-				</table>
-				<br>
+					<div class="form-group">
+						<div class="row">
+							<div class="col-xl-3 col-lg-6 col-sm-12 text-center"> <img src=".\images\f.png"  class="img-fluid hov-scale" alt=""> </div>
+							<div class="col-xl-3 col-lg-6 col-sm-12 text-center"> <img src=".\images\li.png" class="img-fluid hov-scale"  alt=""> </div>
+							<div class="col-xl-3 col-lg-6 col-sm-12 text-center"> <img src=".\images\b.png"  class="img-fluid hov-scale" alt=""> </div>
+							<div class="col-xl-3 col-lg-6 col-sm-12 text-center"> <img src=".\images\ld.png" class="img-fluid hov-scale"  alt=""> </div>
+						</div>
+					</div>
 
-				<form id = "fomrAceptar">
-					<input  id = "aceptar1" type="button" value="aceptar">
+					<div class="form-group text-center">
+						<input id="submit" type="submit" class="btn btn-info btn-lg font-weight-bold" value="Crear">
+					</div>					
+
 				</form>
 
 				<br>
@@ -69,19 +89,13 @@
 			</div>
 		</div>
 		
-
-	
 	</section>
-	<!-- esta es la barra de navegacion-->
 	
 
 
-
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
- 
+ <script src="vendor/jquery/dist/jquery.min.js"></script>
+ <script src="vendor/popper/popper.min.js"></script>
+ <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
 </html>
