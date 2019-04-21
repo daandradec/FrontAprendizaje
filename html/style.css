@@ -59,7 +59,7 @@ a.active{
 
 
 
-#formulario{
+form{
     margin-top: 50px;
 }
 
@@ -85,37 +85,11 @@ div.table-responsive{
     max-height:550px !important;
     overflow-y: auto !important;
 }
-/*
-table, tr, td {
-    border: 1px solid black;
-  }
 
 
-table{
-    text-align: center;
-   
- }
- 
- #fomrAceptar{
-
-  text-align: center;
- }
 
 
- #formAceptar, #aceptar1:hover{
 
-    background-color: #dfdfdf;
-    color: #58a0d6;
-    
-  }
- 
- #formAceptar, #aceptar1{
-
-    background-color: #58a0d6;
-    font-size: 20px;
-    color: white;
-    width: 100px;
-    height: 50px;
-  }
- 
- */
+.modal-title{
+    font-family: 'lobster';
+}

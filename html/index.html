@@ -5,7 +5,8 @@
 	<title>Document</title>
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		
+	<link rel="stylesheet" href="vendor/sweet-alert/sweetalert.css">
+
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -38,12 +39,12 @@
 			<!-- TAB AÑADIR -->
 		  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
-				<form id = "formulario">
+				<form>
 
 					<div class="form-group row">
 						<label for="nombre" class="col-3 font-weight-bold text-info">Nombre:</label>
 						<div class="col-8">
-							<input class="form-control" id="nombre" type="text">
+							<input class="form-control" id="nombre" name="nombre" type="text">
 						</div>
 						
 					</div>
@@ -51,14 +52,14 @@
 					<div class="form-group row">
 						<label for="documento" class="col-3 font-weight-bold text-info">Documento:</label>
 						<div class="col-8">
-							<input class="form-control" id="documento" type="text">
+							<input class="form-control" id="documento" name="documento" type="text">
 						</div>						
 					</div>
 
 					<div class="form-group row">
 						<label for="placa" class="col-3 font-weight-bold text-info">Placa:</label>
 						<div class="col-8">
-							<input class="form-control" id="placa" type="text">
+							<input class="form-control" id="placa" name="placa" type="text">
 						</div>
 						
 					</div>
@@ -76,7 +77,7 @@
 					</div>
 
 					<div class="form-group text-center">
-						<input id="submit" type="submit" class="btn btn-info btn-lg font-weight-bold" value="Crear">
+						<input id="submit" name="submit" type="submit" class="btn btn-info btn-lg font-weight-bold" value="Crear">
 					</div>					
 
 				</form>
@@ -109,94 +110,94 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td> <button class="btn btn-sm btn-light">Editar</button> </td>
+								<td> <button id="botonsito" class="btn btn-sm btn-light">Editar</button> </td>
 								<td>1</td>
 								<td>Pedro Augustin Perez</td>
-								<td>112043672</td>
+								<td>111233672</td>
 								<td>BCP-456</td>
 							</tr>
 							<tr>
 								<td> <button class="btn btn-sm btn-light">Editar</button> </td>
-								<td>1</td>
+								<td>2</td>
 								<td>Pedro Augustin Perez</td>
-								<td>112043672</td>
+								<td>1234043672</td>
 								<td>BCP-456</td>
 							</tr>
 							<tr>
 								<td> <button class="btn btn-sm btn-light">Editar</button> </td>
-								<td>1</td>
+								<td>3</td>
 								<td>Pedro Augustin Perez</td>
-								<td>112043672</td>
+								<td>34543672</td>
 								<td>BCP-456</td>
 							</tr>
 							<tr>
 								<td> <button class="btn btn-sm btn-light">Editar</button> </td>
-								<td>1</td>
+								<td>4</td>
 								<td>Pedro Augustin Perez</td>
-								<td>112043672</td>
+								<td>112043654</td>
 								<td>BCP-456</td>
 							</tr>
 							<tr>
 								<td> <button class="btn btn-sm btn-light">Editar</button> </td>
-								<td>1</td>
+								<td>5</td>
 								<td>Pedro Augustin Perez</td>
-								<td>112043672</td>
+								<td>1120345672</td>
 								<td>BCP-456</td>
 							</tr>
 							<tr>
 								<td> <button class="btn btn-sm btn-light">Editar</button> </td>
-								<td>1</td>
+								<td>6</td>
 								<td>Pedro Augustin Perez</td>
-								<td>112043672</td>
+								<td>117453672</td>
 								<td>BCP-456</td>
 							</tr>
 							<tr>
 								<td> <button class="btn btn-sm btn-light">Editar</button> </td>
-								<td>1</td>
+								<td>7</td>
 								<td>Pedro Augustin Perez</td>
-								<td>112043672</td>
+								<td>112724672</td>
 								<td>BCP-456</td>
 							</tr>
 							<tr>
 								<td> <button class="btn btn-sm btn-light">Editar</button> </td>
 								<td>8</td>
 								<td>Pedro Augustin Perez</td>
-								<td>112043672</td>
+								<td>11374672</td>
 								<td>BCP-456</td>
 							</tr>
 							<tr>
 								<td> <button class="btn btn-sm btn-light">Editar</button> </td>
-								<td>1</td>
+								<td>9</td>
 								<td>Pedro Augustin Perez</td>
-								<td>112043672</td>
+								<td>11234672</td>
 								<td>BCP-456</td>
 							</tr>	
 							<tr>
 								<td> <button class="btn btn-sm btn-light">Editar</button> </td>
-								<td>1</td>
+								<td>10</td>
+								<td>Pedro Augustin Perez</td>
+								<td>111143672</td>
+								<td>BCP-456</td>
+							</tr>
+							<tr>
+								<td> <button class="btn btn-sm btn-light">Editar</button> </td>
+								<td>11</td>
+								<td>Pedro Augustin Perez</td>
+								<td>0322043672</td>
+								<td>BCP-456</td>
+							</tr>
+							<tr>
+								<td> <button class="btn btn-sm btn-light">Editar</button> </td>
+								<td>12</td>
 								<td>Pedro Augustin Perez</td>
 								<td>112043672</td>
 								<td>BCP-456</td>
 							</tr>
 							<tr>
 								<td> <button class="btn btn-sm btn-light">Editar</button> </td>
-								<td>1</td>
+								<td>13</td>
 								<td>Pedro Augustin Perez</td>
-								<td>112043672</td>
-								<td>BCP-456</td>
-							</tr>
-							<tr>
-								<td> <button class="btn btn-sm btn-light">Editar</button> </td>
-								<td>1</td>
-								<td>Pedro Augustin Perez</td>
-								<td>112043672</td>
-								<td>BCP-456</td>
-							</tr>
-							<tr>
-								<td> <button class="btn btn-sm btn-light">Editar</button> </td>
-								<td>1</td>
-								<td>Pedro Augustin Perez</td>
-								<td>112043672</td>
+								<td>134043672</td>
 								<td>BCP-456</td>
 							</tr>																																																																					
 						</tbody>
@@ -208,10 +209,86 @@
 	</section>
 	
 
+	<!-- Popup -->
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title text-muted" id="exampleModalCenterTitle">Actualizando Usuario</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					
+
+
+
+					<form action="">
+
+						<div class="form-group row">
+							<label for="nombre" class="col-4 font-weight-bold text-info">Nombre:</label>
+							<div class="col-8">
+								<input class="form-control" id="nombre" name="nombre" type="text">
+							</div>
+							
+						</div>
+
+						<div class="form-group row">
+							<label for="documento" class="col-4 font-weight-bold text-info">Documento:</label>
+							<div class="col-8">
+								<input class="form-control" id="documento" name="documento" type="text">
+							</div>						
+						</div>
+
+						<div class="form-group row">
+							<label for="placa" class="col-4 font-weight-bold text-info">Placa:</label>
+							<div class="col-8">
+								<input class="form-control" id="placa" name="placa" type="text">
+							</div>					
+						</div>
+
+						<div class="form-group text-center py-3">
+							<input type="button" onclick="updateFields()" class="btn btn-info btn-block font-weight-bold" value="Actualizar">
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
 
  <script src="vendor/jquery/dist/jquery.min.js"></script>
  <script src="vendor/popper/popper.min.js"></script>
  <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+ <script src="vendor/sweet-alert/sweetalert.min.js"></script>
 
+	<script>
+		$("#exampleModalCenter").modal('hide');
+
+		$("tbody button").on('click',function(e){	
+			const modal = document.getElementById("exampleModalCenter");
+			const button = e.target;			
+
+			const fields_modal = modal.children[0].children[0].children[1].children[0].children;
+			const fields_tdrow = button.parentElement.parentElement.children;
+		
+			fields_modal[0].children[1].children[0].value = fields_tdrow[2].innerText;
+			fields_modal[1].children[1].children[0].value = fields_tdrow[3].innerText;
+			fields_modal[2].children[1].children[0].value = fields_tdrow[4].innerText;
+
+			$("#exampleModalCenter").modal('show');
+		});
+
+		function updateFields() {
+			swal({
+				title:"Mensaje",
+				text:"Registro Actualizado",
+				type:"success",
+			},function(){$("#exampleModalCenter").modal('hide')})
+		}
+	</script>
 </body>
 </html>
