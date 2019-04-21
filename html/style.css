@@ -69,13 +69,16 @@ form label{
 }
 
 
-
+.font-close-button{
+    font-size:15px;
+    font-weight: bold;
+}
 
 table td{
     cursor:pointer;
 }
 
-table tbody button{
+table.table-edited tbody button{
     font-family: 'lobster';
     font-size: 10px;
     box-shadow: 0px 0px 2px 2px gray;
