@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Componente que sera el esquema de la tabla por defecto para ser reutilizada por mostrar, borrar y actualizar
 const Tablelayout = (props) => {
     const button_table_field = (props.buttonFlag) ? <th>Accion</th> : undefined;
     const button_table_html = (props.buttonFlag) ? <td>{props.button}</td> : undefined;

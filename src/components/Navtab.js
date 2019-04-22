@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Componente Navtab (barra de navegacion)
 const Navtab = () => {
     return (
       <ul className="nav nav-tabs" id="myTab" role="tablist">

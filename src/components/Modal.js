@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+// Componente de la ventana emergente
 class Modal extends Component {
     render() {
         return (

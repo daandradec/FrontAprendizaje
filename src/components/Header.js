@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Componente Header
 const Header = () => {
     return (
         <header>
