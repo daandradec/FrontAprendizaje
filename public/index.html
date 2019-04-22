@@ -22,6 +22,8 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	  <link rel="stylesheet" href="vendor/sweet-alert/sweetalert.css">
     <title>React App</title>
   </head>
   <body>
@@ -37,5 +39,46 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+  <script src="vendor/jquery/dist/jquery.min.js"></script>
+  <script src="vendor/popper/popper.min.js"></script>
+  <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="vendor/sweet-alert/sweetalert.min.js"></script>
+
+    <script>      
+
+      $("#exampleModalCenter").modal('hide');
+
+      
+      window.addEventListener('load',function(){
+
+        document.querySelectorAll("table.table-edited tbody button").forEach( (button) => {
+          button.addEventListener('click',function(e){
+            const modal = document.getElementById("exampleModalCenter");
+            const button = e.target;			
+
+            const fields_modal = modal.children[0].children[0].children[1].children[0].children;
+            const fields_tdrow = button.parentElement.parentElement.children;
+          
+            fields_modal[0].children[1].children[0].value = fields_tdrow[2].innerText;
+            fields_modal[1].children[1].children[0].value = fields_tdrow[3].innerText;
+            fields_modal[2].children[1].children[0].value = fields_tdrow[4].innerText;
+
+            $("#exampleModalCenter").modal('show');            
+          })
+        });   
+
+        document.querySelector("#modalFormButton").addEventListener('click',function(e){
+          swal({
+            title:"Mensaje",
+            text:"Registro Actualizado",
+            type:"success",
+          },function(){$("#exampleModalCenter").modal('hide')})
+        })
+
+      },false)
+
+    </script>
+
   </body>
 </html>
