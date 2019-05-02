@@ -1,9 +1,12 @@
 import React from 'react';
-
-// componente que muestra el cuerpo del crud de añadir
-const Tabadd = () => {
+ 
+ // componente que muestra el cuerpo del crud de añadir
+ const Tabadd = () => {
     return (
+      
+     
         <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
 
             <form>
                 <div className="form-group row">

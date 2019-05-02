@@ -8,10 +8,10 @@ import Tabupdate from './Tabupdate'
 const Tabcontent = (props) => {
     return (
         <div className="tab-content" id="myTabContent">
-            <Tabadd />
-            <Tabshow />
-            <Tabdelete />
-            <Tabupdate/>
+            <Tabadd/>
+            <Tabshow respuestajson={props.respuestajson}/>
+            <Tabdelete respuestajson={props.respuestajson}/>
+            <Tabupdate respuestajson={props.respuestajson}/>
         </div>
     );
 };

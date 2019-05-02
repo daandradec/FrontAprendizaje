@@ -5,7 +5,7 @@ import Tablelayout from './Tablelayout'
 const Tabdelete = (props) => {
     return (
         <div className="tab-pane fade" id="delete" role="tabpanel" aria-labelledby="delete-tab">											
-            <Tablelayout rclass="" buttonFlag={true} button={<button className="btn btn-danger font-close-button">&times;</button>} />            
+            <Tablelayout rclass="" buttonFlag={true} button={<button className="btn btn-danger font-close-button">&times;</button>} respuestajson={props.respuestajson} />            
         </div>
     );
 };
