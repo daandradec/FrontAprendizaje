@@ -49,10 +49,10 @@
 
       $("#exampleModalCenter").modal('hide');
 
-      
       window.addEventListener('load',function(){
-
+        /*      
         document.querySelectorAll("table.table-edited tbody button").forEach( (button) => {
+          
           button.addEventListener('click',function(e){
             const modal = document.getElementById("exampleModalCenter");
             const button = e.target;			
@@ -64,20 +64,22 @@
             fields_modal[1].children[1].children[0].value = fields_tdrow[3].innerText;
             fields_modal[2].children[1].children[0].value = fields_tdrow[4].innerText;
 
-            $("#exampleModalCenter").modal('show');            
+            $("#exampleModalCenter").modal('show');
           })
-        });   
-
+        }); */  
+        
         document.querySelector("#modalFormButton").addEventListener('click',function(e){
           swal({
             title:"Mensaje",
             text:"Registro Actualizado",
             type:"success",
-          },function(){$("#exampleModalCenter").modal('hide')})
+          },function(){
+            $("#exampleModalCenter").modal('hide')
+            })
         })
 
       },false)
-
+      
     </script>
 
   </body>

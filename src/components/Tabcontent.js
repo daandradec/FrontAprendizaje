@@ -8,10 +8,10 @@ import Tabupdate from './Tabupdate'
 const Tabcontent = (props) => {
     return (
         <div className="tab-content" id="myTabContent">
-            <Tabadd/>
+            <Tabadd callbackcreate={props.callbackcreate}/>
             <Tabshow respuestajson={props.respuestajson}/>
-            <Tabdelete respuestajson={props.respuestajson}/>
-            <Tabupdate respuestajson={props.respuestajson}/>
+            <Tabdelete respuestajson={props.respuestajson} callbackdelete={props.callbackdelete}/>
+            <Tabupdate respuestajson={props.respuestajson} modalbutton={props.modalbutton}/>
         </div>
     );
 };

@@ -5,7 +5,7 @@ import Tablelayout from './Tablelayout'
 const Tabupdate = (props) => {
     return (
         <div className="tab-pane fade" id="update" role="tabpanel" aria-labelledby="update-tab">											
-            <Tablelayout rclass="table-edited" buttonFlag={true} button={<button className="btn btn-sm btn-light">Editar</button>} respuestajson={props.respuestajson}/>            
+            <Tablelayout rclass="table-edited" buttonFlag={true} button={<button type="button" className="btn btn-sm btn-light" onClick={props.modalbutton} data-toggle="modal" data-target="#exampleModalCenter">Editar</button>} respuestajson={props.respuestajson}/>            
         </div>
     );
 };

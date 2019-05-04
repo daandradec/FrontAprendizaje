@@ -1,6 +1,4 @@
 import React from 'react';
-import $ from 'jquery';
-
 
 // Componente que sera el esquema de la tabla por defecto para ser reutilizada por mostrar, borrar y actualizar
 const Tablelayout = (props) => {
@@ -9,20 +7,19 @@ const Tablelayout = (props) => {
    
     
     var lista = [];
-    if(props.respuestajson != undefined){
+    if(props.respuestajson !== undefined){
         
         for(var i =0; i < props.respuestajson.length; i++){
             lista.push(
-                <tr key={i}>    
+                <tr key={i} index={i}>    
                     {button_table_html}   
-                    <td>{i}</td>                
+                    <td>{props.respuestajson[i].id}</td>                
                     <td>{props.respuestajson[i].attributes.name}</td>
                     <td>{props.respuestajson[i].attributes.document}</td>
                     <td>{props.respuestajson[i].attributes.plate}</td>
                  </tr>
             )
         } 
-        //console.log(props.respuestajson)
     }
     
 

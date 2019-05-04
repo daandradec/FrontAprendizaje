@@ -12,7 +12,7 @@ class Crud extends Component {
         return (
             <section className="mx-auto bg-white border mt-2" style={sectionStyles}>
                 <Navtab />
-                <Tabcontent respuestajson={this.props.respuestajson}/>
+                <Tabcontent respuestajson={this.props.respuestajson} callbackcreate={this.props.callbackcreate} callbackdelete={this.props.callbackdelete} modalbutton={this.props.modalbutton}/>
             </section>
         );
     }
